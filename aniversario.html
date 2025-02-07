@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversario 💖</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="meses.css">
+</head>
+<body>
+
+    <div class="container text-center my-5">
+        <div class="card p-4 shadow-lg romantic-card">
+            <h1 class="text-danger">Feliz 7 meses, mi amor 💖</h1>
+            <p class="lead">Gracias por cada momento hermoso que hemos compartido. Te amo muchísimo. 💕</p>
+
+            <!-- Botón de sorpresa -->
+            <button class="btn btn-danger mt-3" id="btnSurprise">🎁 Presiona para ver la sorpresa</button>
+
+            <!-- Sección de sorpresa (oculta por defecto) -->
+            <div id="surprise" class="hidden mt-3">
+                <div class="card p-4 shadow-lg romantic-card">
+                    <h1 class="text-danger">Feliz 7 meses, te amo mi amor 💖</h1>
+                    <p class="lead">Gracias por cada momento que paso contigo, siempre me haces reír. Te amo muchísimo. 💕</p>
+        
+                    <!-- Carrusel de imágenes -->
+                    <div id="carruselAniversario" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/foto1.jpeg" class="d-block mx-auto img-thumbnail carousel-img" alt="Nosotros">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/foto2.jpeg" class="d-block mx-auto img-thumbnail carousel-img" alt="Nosotros">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/foto3.jpeg" class="d-block mx-auto img-thumbnail carousel-img" alt="Nosotros">
+                            </div>
+                        </div>
+        
+                        <!-- Controles del carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselAniversario" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carruselAniversario" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor de corazones -->
+    <div id="heart-container"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
